@@ -64,4 +64,5 @@ end
 		- Any single element array should return false
 		- Hint: Use two nested for loops where you match each element
 		of the array with all the other elements. Check whether the sum
-=end    of each pair is equal to n.
+    of each pair is equal to n.
+=end
