@@ -31,7 +31,7 @@ end
 #		end
 #	end
 #	return false
-end
+#end
 def sum_to_n? arr, n
   if (arr.length == 0)
     return false
