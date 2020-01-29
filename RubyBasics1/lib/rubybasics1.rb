@@ -18,7 +18,20 @@ def max_2_sum arr
 end
 
 # Part III
-
+# my solution below.
+#def sum_to_n? arr, n
+#	if(arr.length == 0 || arr.length == 1)
+#		return false
+#	end
+#	for i in 0...arr.length do
+#		for j in 0...arr.length do
+#			if((arr[i] + arr[j]) == n && (i != j)) # i cannot be equal to j, this would mean we're adding the same number
+#				return true
+#			end
+#		end
+#	end
+#	return false
+end
 def sum_to_n? arr, n
   if (arr.length == 0)
     return false
