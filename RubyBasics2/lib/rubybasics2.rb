@@ -18,4 +18,8 @@ end
 # Part III
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  if /^(0|(10|111*0)(10|111*0)*0)+$/.match(s).nil?
+    return false
+  end
+  return true
 end
