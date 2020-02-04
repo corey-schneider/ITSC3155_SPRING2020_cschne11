@@ -18,7 +18,7 @@ end
 # Part II
 def array2d_2_hash contact_info, contacts
     i = 0
-    if (contact_info[0].any?)
+    if (contact_info[0].any?) 
         contacts.each do |key, value|
             contacts[key] = {"email" => contact_info[i][0], "phone" => contact_info[i][1]}
             i += 1
