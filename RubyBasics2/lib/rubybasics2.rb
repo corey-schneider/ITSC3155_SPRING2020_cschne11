@@ -3,6 +3,8 @@
 # Part I
 def hello(name)
   # YOUR CODE HERE
+  puts "Hello, #{name}"
+  return "Hello, #{name}"
 end
 
 # Part II
