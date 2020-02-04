@@ -9,7 +9,10 @@ end
 
 # Part II
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if /^[^aeiou\W]/i.match(s).nil?
+    return false
+  end
+  return true
 end
 
 # Part III
