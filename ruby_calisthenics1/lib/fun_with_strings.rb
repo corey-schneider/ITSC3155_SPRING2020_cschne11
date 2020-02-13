@@ -5,10 +5,16 @@ module FunWithStrings
     str == str.reverse
   end
   
-  
-  
   def count_words
-    # your code here
+    #wf = self.group_by(&:itself).map { |w, ws| [w, ws.length] }.to_h
+    #return wf
+    hash = Hash.new(0)
+    str = self.downcase.gsub(/[^a-z0-9 ]+/i, "")
+    str.split.each {
+      |i| hash[i] = hash[i]+=1
+    }
+    hash
+    
   end
   
   def anagram_groups
