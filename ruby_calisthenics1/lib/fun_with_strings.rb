@@ -9,17 +9,17 @@ module FunWithStrings
     hash = Hash.new(0)
     str = self.downcase.gsub(/[^a-z0-9 ]+/i, "")
     str.split.each {
-      |i| hash[i] = hash[i]+=1
+      |i| hash[i]+=1
     }
     hash
     
   end
   
   def anagram_groups
-#    output = self.downcase.split.group_by{
-#      |i| i.chars.sort
-#    }.values
-    output = self.downcase.split.group_by { |i| i.chars.sort }.values
+    self.downcase.split.group_by {
+      |words| words.chars.sort
+    }.values
+
   end
   
 end
